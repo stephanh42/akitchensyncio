@@ -11,10 +11,10 @@ check_call((py_exec, "setup.py", "sdist"))
 check_call((py_exec, "setup.py", "bdist_wheel"))
 
 print("""1. Upload to testpypi
-2. Upload to pypy
+2. Upload to pypi
 9. Exit""")
 
-repos = {"1": "testpypi", "2": "pypy"}
+repos = {"1": "testpypi", "2": "pypi"}
 
 choice = repos.get(input("Make your choice: ").strip())
 if choice is not None:
