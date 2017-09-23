@@ -1,6 +1,17 @@
 # akitchensyncio
 Utility functions for asyncio which Stephan wished where in the stdlib but aren't.
 
+Requires a Python version which supports the `async` syntax (Python 3.5 or higher).
+
+
+# Installation
+
+To install akitchensyncio, simply:
+
+```bash
+$ pip install akitchensyncio
+```
+
 ## `wrap_future(f)`
 
 Takes a callable `f` which returns an awaitable,
